@@ -3,9 +3,10 @@
 vi ~/.zshrc
 
 ```shell
-source ~/sites/zsh-alias/common.zshalias
-source ~/sites/zsh-alias/git.zshalias
-source ~/sites/zsh-alias/laravel.zshalias
-source ~/sites/zsh-alias/octobercms.zshalias
-source ~/sites/zsh-alias/magento.zshalias
+source ~/zsh-alias/common.zshalias
+source ~/zsh-alias/git.zshalias
+source ~/zsh-alias/laravel.zshalias
+source ~/zsh-alias/octobercms.zshalias
+source ~/zsh-alias/magento.zshalias
 ```
+
