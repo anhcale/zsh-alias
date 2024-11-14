@@ -1,30 +1,40 @@
 # source ~/sites/zsh-alias/common.zshalias
 
-alias cls="clear"
+# Alembic
+alias ad="alembic downgrade -1"
+alias ar="alembic revision --autogenerate -m "
+alias au="alembic upgrade head"
 
-alias ccp="composer create-project "
+# Clear
+alias cl="clear"
+
+# Composer
+alias cc="composer create-project "
 alias ci="composer install"
 alias cr="composer require "
 alias cu="composer update"
 
-alias hs="history | grep"
-alias as="pmset -g assertions"
+# Docker
+alias dcbb="docker compose exec backend bash"
+alias dcw="docker compose watch"
+alias ds="sudo service docker start"
 
-alias localip="ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'"
+# history
+alias hg="history | grep"
 
-alias my="sudo mysql -uroot -pr0@tr0@t"
+# IP
+alias ilocal="ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'"
+alias imy="curl http://ipecho.net/plain; echo"
 
-alias myip="curl http://ipecho.net/plain; echo"
+# MySQL
+alias my="sudo mysql -uroot -pr0@t"
 
-alias oa="open /Applications/Audacity.app/Contents/MacOS/Audacity"
+# PHP
+alias pes="sudo service php8.3-fpm start & sudo service mariadb start & sudo service nginx start"
 
+# SSH
 alias sc="vi ~/.ssh/config"
+alias sz="vi ~/.zshrc"
 
-alias ve="vi .env"
-alias vs="sudo vi"
-alias vz="vi ~/.zshrc"
-
-alias xon="xdebug-toggle on; valet restart"
-alias xoff="xdebug-toggle off; valet restart"
-
+# Yarn
 alias yi="yarn install "

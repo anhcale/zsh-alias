@@ -1,5 +1,9 @@
 # source ~/sites/zsh-alias/magento.zshalias
 
-alias mcp="composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition "
-alias m2fad="bin/magento module:disable Magento_TwoFactorAuth"
-alias mdmd="bin/magento deploy:mode:set developer"
+# Alembic
+alias ar="alembic revision --autogenerate -m "
+alias au="alembic upgrade head"
+
+# Docker
+alias dbb="docker compose exec backend bash"
+alias dw="docker compose watch"
