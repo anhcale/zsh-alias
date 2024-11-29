@@ -1,0 +1,4 @@
+# source ~/sites/zsh-alias/NodeJS.zshalias
+
+# Node
+alias nu="fnm use --install-if-missing 22"

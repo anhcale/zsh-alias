@@ -1,4 +1,29 @@
 # source ~/sites/zsh-alias/laravel.zshalias
 
-alias lcc="php artisan cache:clear"
-alias lcp="composer create-project laravel/laravel "
+############### Laravel ###############
+alias lcp="composer create-project laravel/laravel " # Laravel Create Project
+
+############### Sail ###############
+alias sail="sh $([ -f sail ] && echo sail || echo vendor/bin/sail)"
+alias sa="sail php artisan " # Sail Artisan
+alias scc="sail php artisan cache:clear" # Sail Clear Cache
+alias sccf="sail php artisan config:clear" # Sail Clear Config
+alias sd="sail npm run dev" # Sail Dev - Run dev frontend
+alias skg="sail php artisan key:generate" # Key generate
+alias skp="sail npx kill-port " # Sail kill port
+alias smb='(){sail php artisan make:model $1 --all --resource --phpunit;}' #Sail Make Bundle
+alias smc='(){sail php artisan make:controller $1Controller;}' # Sail Make controller
+alias smcmd="sail php artisan make:command " # Sail Make Command
+alias smcr='(){sail php artisan make:controller $1Controller --resource;}' # Sail Make controller resource
+alias sm='sail php artisan migrate' # Sail Migrate
+alias smm='sail php artisan make:migration ' # Sail Make Migration
+alias sr="docker compose down -v && sail build --no-cache && sail up" # Sail Rebuilding
+alias srl='sail php artisan route:list' # Sail Route List
+alias ss="sail stop" # Sail Stop
+alias ssa="sail php artisan db:seed" # Sail Seed All
+alias ssc="(){sail php artisan db:seed --class=$1Seeder;}" # Sail Seed Class
+alias ssm="(){sail php artisan make:seeder $1Seeder;}" # Sail Seed Make
+alias su="sail up -d" # Sail Up
+
+############### My Apps ###############
+alias mca="sail php artisan app:create-content " # Me Content Add

@@ -1,0 +1,8 @@
+# source ~/sites/zsh-alias/expo.zshalias
+
+########## Project ##########
+alias epc="npx create-expo-app@latest "
+alias epl="eas init --id " # Expo Project Linked
+
+########## Start ##########
+alias es="npx expo start"
